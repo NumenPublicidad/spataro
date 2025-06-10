@@ -28,7 +28,7 @@ const Footer = () => {
 
   return (
     <motion.footer
-      className="bg-gradient-to-t from-gray-100 to-white py-12 md:py-16 text-gray-700 border-t border-gray-200"
+      className="bg-linear-to-r from-gray-200 to-white py-12 md:py-16 text-gray-700 border-t border-gray-200"
       initial="hidden"
       whileInView="visible" // Animate when it comes into view
       viewport={{ once: true, amount: 0.1 }} // Animate once when 10% is visible
@@ -66,11 +66,11 @@ const Footer = () => {
             <ul className="list-none p-0 m-0 space-y-2">
               <motion.li variants={itemVariants}>
                 <p className="font-sans text-base text-gray-700">Verona: Via Angelo Scarsellini 9/A</p>
-                <a href="tel:+393453341924" className="text-rose-600 hover:text-rose-700 transition-colors no-underline font-sans text-base">T. 345 334 1924</a>
+                <a href="tel:+393453341924" className="text-main hover:text-rose-700 transition-colors no-underline font-sans text-base">T. 345 334 1924</a>
               </motion.li>
               <motion.li variants={itemVariants}>
                 <p className="font-sans text-base text-gray-700 mt-4">Milano: Piazza della Repubblica 5</p>
-                <a href="mailto:studio@giuliacampolo.com" className="text-rose-600 hover:text-rose-700 transition-colors no-underline font-sans text-base">M. studio@giuliacampolo.com</a>
+                <a href="mailto:studio@giuliacampolo.com" className="text-main hover:text-rose-700 transition-colors no-underline font-sans text-base">M. studio@giuliacampolo.com</a>
               </motion.li>
             </ul>
           </motion.div>
@@ -78,12 +78,12 @@ const Footer = () => {
           {/* Legal y Créditos */}
           <motion.div className="flex-1 min-w-[200px] text-center md:text-right" variants={itemVariants}>
             <p className="font-sans text-sm mb-4">
-              <Link href="/privacy-policy" className="text-gray-700 hover:text-rose-600 transition-colors no-underline">Privacy Policy</Link>
+              <Link href="/privacy-policy" className="text-gray-700 hover:text-main transition-colors no-underline">Privacy Policy</Link>
             </p>
             <p className="font-sans text-xs text-gray-500 leading-relaxed">
               &copy; {new Date().getFullYear()} CARO SPATARO. Todos los derechos reservados.
               <br />
-              Another superwebsite made by <a href="https://allcreative.agency" target="_blank" rel="noopener noreferrer" className="text-gray-800 font-bold hover:text-rose-600 transition-colors no-underline">ALL CREATIVE. AGENCY</a>
+              Another superwebsite made by <a href="https://allcreative.agency" target="_blank" rel="noopener noreferrer" className="text-gray-800 font-bold hover:text-main transition-colors no-underline">ALL CREATIVE. AGENCY</a>
             </p>
           </motion.div>
         </motion.div>

@@ -1,9 +1,9 @@
 // components/PhilosophySection.jsx
 "use client"; // Marca como Client Component para usar Framer Motion
 
-import React from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+import React from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 const PhilosophySection = () => {
   // Variantes de animación para el título
@@ -15,9 +15,9 @@ const PhilosophySection = () => {
       transition: {
         duration: 0.8,
         ease: "easeOut",
-        delay: 0.2
-      }
-    }
+        delay: 0.2,
+      },
+    },
   };
 
   // Variantes de animación para los bloques de texto
@@ -29,9 +29,9 @@ const PhilosophySection = () => {
       transition: {
         duration: 0.7,
         ease: "easeOut",
-        delay: i * 0.3 + 0.5 // Retraso escalonado
-      }
-    })
+        delay: i * 0.3 + 0.5, // Retraso escalonado
+      },
+    }),
   };
 
   // Variantes de animación para el botón
@@ -43,9 +43,9 @@ const PhilosophySection = () => {
       transition: {
         duration: 0.6,
         ease: "easeOut",
-        delay: 1.2
-      }
-    }
+        delay: 1.2,
+      },
+    },
   };
 
   return (
@@ -72,10 +72,12 @@ const PhilosophySection = () => {
           >
             <div>
               <p className="font-sans text-xl md:text-2xl leading-relaxed font-light text-gray-700 mb-4">
-                UN MODO DI PENSARE, UN MODO DI SENTIRE, UN MODO DI ESSERE.
+                LA TUA ESSENZA MERITA DI ESSERE VISTA, NON CAMBIATA.
               </p>
-              <p className="font-sans text-base md:text-lg leading-relaxed text-gray-600">
-                Una historia que se inspira en la belleza natural, dentro y fuera, y en aquello que nos diferencia, haciéndonos auténticos.
+              <p className="font-sans text-base md:text-lg leading-relaxed text-texto">
+                Lavoriamo con precisione e sensibilità, per esaltare la tua
+                immagine senza artifici. Perché sentirsi belle non è un trucco:
+                è un diritto.
               </p>
             </div>
           </motion.div>
@@ -87,15 +89,19 @@ const PhilosophySection = () => {
             custom={1} // Índice para el escalonamiento
           >
             <div>
-              <p className="font-sans text-base md:text-lg leading-relaxed text-gray-600 mb-6 md:mb-8">
-                Un viaje que celebra la belleza en un ambiente que es en realidad una experiencia que resuena con la armonía de la naturaleza que lo caracteriza.
+              <p className="font-sans text-base md:text-lg leading-relaxed text-texto mb-6 md:mb-8">
+                Ogni volto ha un equilibrio che va rispettato. Con il
+                microblading, lo accompagniamo, non lo stravolgiamo.
               </p>
             </div>
             <motion.div
               variants={buttonVariants}
               className="mt-auto" // Empuja el botón hacia abajo si el contenido es más corto
             >
-              <Link href="/about" className="inline-block bg-rose-600 text-white py-3 px-8 md:py-4 md:px-10 no-underline font-semibold text-base uppercase tracking-wider rounded-full shadow-lg hover:bg-rose-700 hover:scale-105 transition-all duration-300 ease-in-out">
+              <Link
+                href="/about"
+                className="inline-block bg-acento text-white py-3 px-8 md:py-4 md:px-10 no-underline font-semibold text-base uppercase tracking-wider rounded-full shadow-lg hover:bg-main hover:scale-105 transition-all duration-300 ease-in-out"
+              >
                 SCOPRI DI PIÙ
               </Link>
             </motion.div>

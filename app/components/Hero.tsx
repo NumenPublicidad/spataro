@@ -240,8 +240,7 @@ const HeroSection = () => {
               variants={sloganVariants}
               custom={3}
             >
-              Descubre la armonía perfecta entre tu esencia y la naturalidad que
-              mereces.
+              In uno spazio dove la bellezza incontra la calma, il tuo sguardo torna a parlare con sicurezza.
             </motion.p>
             <motion.div
               initial="hidden"
@@ -250,9 +249,9 @@ const HeroSection = () => {
             >
               <Link
                 href="/services"
-                className="mt-8 md:mt-10 inline-block px-8 py-3 md:px-10 md:py-4 bg-rose-600 text-white font-semibold tracking-wider uppercase text-base md:text-lg rounded-full shadow-xl hover:bg-rose-700 transition-all duration-300 ease-in-out transform hover:scale-105"
+                className="mt-8 md:mt-10 inline-block px-8 py-3 md:px-10 md:py-4 bg-acento  font-semibold tracking-wider uppercase text-base md:text-lg rounded-full shadow-xl hover:bg-main transition-all duration-300 ease-in-out transform hover:scale-105"
               >
-                Conoce Nuestros Servicios
+                Scopri il mio lavoro
               </Link>
             </motion.div>
           </div>

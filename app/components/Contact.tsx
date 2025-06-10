@@ -1,9 +1,8 @@
 // components/ContactSection.jsx
 "use client"; // Mark as Client Component for Framer Motion
 
-import React from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const ContactSection = () => {
   // Animation variants for the main title
@@ -15,9 +14,9 @@ const ContactSection = () => {
       transition: {
         duration: 0.7,
         ease: "easeOut",
-        delay: 0.2
-      }
-    }
+        delay: 0.2,
+      },
+    },
   };
 
   // Animation variants for the introductory paragraph
@@ -29,9 +28,9 @@ const ContactSection = () => {
       transition: {
         duration: 0.6,
         ease: "easeOut",
-        delay: 0.4
-      }
-    }
+        delay: 0.4,
+      },
+    },
   };
 
   // Animation variants for the contact buttons
@@ -44,14 +43,14 @@ const ContactSection = () => {
         duration: 0.7,
         ease: "easeOut",
         delay: 0.6,
-        staggerChildren: 0.2 // Stagger individual buttons
-      }
-    }
+        staggerChildren: 0.2, // Stagger individual buttons
+      },
+    },
   };
 
   const buttonItemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
 
   // Animation variants for the address/contact info block
@@ -63,9 +62,9 @@ const ContactSection = () => {
       transition: {
         duration: 0.8,
         ease: "easeOut",
-        delay: 1.0
-      }
-    }
+        delay: 1.0,
+      },
+    },
   };
 
   return (
@@ -87,7 +86,11 @@ const ContactSection = () => {
           className="font-sans text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-10 md:mb-12 text-gray-700"
           variants={introTextVariants}
         >
-          Contattaci per una <span className="font-semibold text-rose-600">CONSULENZA TELEFONICA</span> o per prenotare un <span className="font-semibold text-rose-600">APPUNTAMENTO</span>. Siamo qui per te.
+          Contattaci per una{" "}
+          <span className="font-semibold text-main">CONSULENZA TELEFONICA</span>{" "}
+          o per prenotare un{" "}
+          <span className="font-semibold text-main">APPUNTAMENTO</span>. Siamo
+          qui per te.
         </motion.p>
 
         <motion.div
@@ -96,13 +99,26 @@ const ContactSection = () => {
         >
           <motion.a
             href="tel:+393453341924"
-            className="flex-1 sm:flex-none inline-flex items-center justify-center bg-rose-600 text-white py-4 px-8 md:py-5 md:px-10 no-underline font-semibold text-base md:text-lg rounded-full shadow-lg hover:bg-rose-700 hover:scale-105 transition-all duration-300 ease-in-out whitespace-nowrap"
+            className="flex-1 sm:flex-none inline-flex items-center justify-center bg-acento text-white py-4 px-8 md:py-5 md:px-10 no-underline font-semibold text-base md:text-lg rounded-full shadow-lg hover:bg-main hover:scale-105 transition-all duration-300 ease-in-out whitespace-nowrap"
             variants={buttonItemVariants}
           >
-            <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.135a11.042 11.042 0 005.516 5.516l1.135-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <svg
+              className="w-5 h-5 mr-3"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.135a11.042 11.042 0 005.516 5.516l1.135-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              ></path>
+            </svg>
             PARLA CON NOSOTROS
           </motion.a>
-          <motion.div variants={buttonItemVariants}>
+          {/* <motion.div variants={buttonItemVariants}>
             <Link
               href="/contact-form"
               className="flex-1 sm:flex-none inline-flex items-center justify-center bg-white text-gray-900 border-2 border-gray-300 py-4 px-8 md:py-5 md:px-10 no-underline font-semibold text-base md:text-lg rounded-full shadow-lg hover:bg-gray-50 hover:border-gray-400 hover:scale-105 transition-all duration-300 ease-in-out whitespace-nowrap"
@@ -110,7 +126,7 @@ const ContactSection = () => {
               <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 1 012.828 0L19 7.586m-4.5-4.5l-4.5 4.5M10 14H6.001M10 17H6"></path></svg>
               COMPILA IL FORM
             </Link>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
 
         <motion.div
@@ -118,16 +134,30 @@ const ContactSection = () => {
           variants={infoBlockVariants}
         >
           <p className="mb-2">
-            <span className="font-semibold text-gray-900">VERONA</span> | Via Angelo Scarsellini 9/A
+            <span className="font-semibold text-gray-900">VERONA</span> | Via
+            Angelo Scarsellini 9/A
           </p>
           <p className="mb-6">
-            <span className="font-semibold text-gray-900">T.</span> <a href="tel:+393453341924" className="text-gray-700 hover:text-gray-900 transition-colors no-underline">345 334 1924</a>
+            <span className="font-semibold text-gray-900">T.</span>{" "}
+            <a
+              href="tel:+393453341924"
+              className="text-gray-700 hover:text-gray-900 transition-colors no-underline"
+            >
+              345 334 1924
+            </a>
           </p>
           <p className="mb-2">
-            <span className="font-semibold text-gray-900">MILANO</span> | Piazza della Repubblica 5
+            <span className="font-semibold text-gray-900">MILANO</span> | Piazza
+            della Repubblica 5
           </p>
           <p>
-            <span className="font-semibold text-gray-900">M.</span> <a href="mailto:studio@giuliacampolo.com" className="text-rose-600 hover:text-rose-700 transition-colors no-underline">studio@giuliacampolo.com</a>
+            <span className="font-semibold text-gray-900">M.</span>{" "}
+            <a
+              href="mailto:studio@giuliacampolo.com"
+              className="text-main hover:text-rose-700 transition-colors no-underline"
+            >
+              studio@giuliacampolo.com
+            </a>
           </p>
         </motion.div>
       </div>

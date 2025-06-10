@@ -58,7 +58,7 @@ const CallToAcion = () => {
         <motion.div variants={buttonVariants}>
           <Link
             href="/contact"
-            className="inline-block px-10 py-4 md:px-12 md:py-5 bg-rose-600 text-white font-semibold tracking-wider uppercase text-lg md:text-xl rounded-full shadow-xl hover:bg-rose-700 hover:scale-105 transition-all duration-300 ease-in-out"
+            className="inline-block px-10 py-4 md:px-12 md:py-5 bg-acento text-black font-semibold tracking-wider uppercase text-lg md:text-xl rounded-full shadow-xl hover:bg-main hover:scale-105 transition-all duration-300 ease-in-out"
           >
             AGENDA TU CITA
           </Link>
