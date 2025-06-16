@@ -4,7 +4,7 @@ import HeroSection from "./components/Hero";
 import ImageGallerySection from "./components/ImageGallerySection";
 import PhilosophySection from "./components/PhilosophySection";
 import ProductHighlightSection from "./components/ProductHighlightSection";
-import ServicesProductsSection from "./components/Services";
+import MiTecnica from "./components/MiTecnica";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <HeroSection />
       <PhilosophySection />
       <ProductHighlightSection />
-      <ServicesProductsSection />
+      <MiTecnica />
       <ImageGallerySection />
       <CallToAcion />
       <ContactSection />
